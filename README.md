@@ -19,12 +19,12 @@ Here, we will be applying knowledge of DataFrames and tabular data and create en
 - Deliverable 2: The Employees Eligible for the Mentorship Program
 - Deliverable 3: A written report on the employee database analysis (README.md)
 
-# Tools used:
+## Tools used:
 #### SQL - 
 Databases are used everywhere—small and large businesses, and even individuals working on personal projects—and SQL is one of the most widely used query languages. Its ability to organize and query data, especially on a large scale, makes SQL knowledge a highly sought after skill in the workforce. SQL statements will be used to perform data analysis. For this project we will be using the following two tools:
 
 - 1. PostgreSQL/Postgres - Postgres SQL is a relational database system holding data. This type of database consists of tables and their predefined relationships. It is a reliable and easy to use database for SQL. Itcreates a local server on the computer which is where the databases created will be stored. The databses will be storing the tables nad the data.
-- 2. pgAdmin - It is the interface that talks to Postgres. pgAdmin is an interface specifically built for Postgres. It is also user-friendly and easy to navigate with loads of documentation available. It is the window into our database, that is, it's where queries are written and executed and where results are viewed. While Postgres holds the files, pgAdmin provides the access. All SQL actions take place within these two programs.
+- 2. pgAdmin - It is the graphical user interface (GUI) that talks to Postgres. pgAdmin is an interface specifically built for Postgres. It is also user-friendly and easy to navigate with loads of documentation available. It is the window into our database, that is, it's where queries are written and executed and where results are viewed. While Postgres holds the files, pgAdmin provides the access. All SQL actions take place within these two programs.
 #### Entity Relationship Diagrams(ERDs) - 
 An entity relationship diagram (ERD) is a type of flowchart that highlights different tables and their relationships to each other. The ERD does not include any actual data, but it does capture the following pertinent information from each CSV file:
 
@@ -33,5 +33,12 @@ An entity relationship diagram (ERD) is a type of flowchart that highlights diff
 - Data types for each column
 The ERD also shows the flow of information from one table to another. There are three types of ERDs: conceptual, logical, and physical. Each one builds upon the other—you need the conceptual ERD to build a logical ERD to build a physical ERD.
 - 3. Quick DBD - Using an online tool called Quick Database Diagrams ("Quick DBD" for short), we'll help Bobby start by familiarizing ourselves with the webpage, then create a conceptual ERD.  Our flow chart will help us navigate through the relationships more easily than if we had all six CSV files open side-by-side. Quick DBD is a great resource—it's intuitive and creates clean and comprehensible ERDs that are easily exported as image files. http://quickdatabasediagrams.com/
+
+## Procedure:
+- Downloaded the 6 .csv files and analyzed the data by checking the number of columns and data.
+- Created an ERD using the online tool  to get an idea of the primary keys and the foreign keys in the 6 databases.
+- Created tables in pgAdmin for each .csv
+- 
+ 
 
 
