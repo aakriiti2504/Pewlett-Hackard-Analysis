@@ -47,11 +47,45 @@ departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, ti
 
 
 ## Results: 
+Various queries were run to get our analysis done. Some of the details of the deliverables are discussed below:
+- 1) Using SQL queries, a a Retirement Titles table that holds all the titles of current employees who were born between January 1, 1952 and December 31, 1955.
 
--1)
--2)
--3)
--4)
+![1a](https://user-images.githubusercontent.com/23488019/145671006-316e7720-f317-4643-9609-747c5f99eda9.PNG)
+
+Because some employees may have multiple titles in the database—for example, due to promotions,we will use the DISTINCT ON statement to create a table that contains the most recent title of each employee. Then, use the COUNT() function to create a final table that has the number of retirement-age employees by most recent job title.
+
+![1atable](https://user-images.githubusercontent.com/23488019/145671066-ca4d21dd-ece5-43bc-8fd2-f2648857b39c.PNG)
+ with the generated retirement_titles table we can get information of every eligible employee for retirement. We can also see how long they worked at every position during their career and get basic information regarding their start and end dates. We can also note that there are many entries of same employees with different positions in the company.
+
+- 2) There are duplicate entries for some employees because they have switched titles over the years.
+![1b](https://user-images.githubusercontent.com/23488019/145670654-f9953793-803a-41a3-a78c-f4d5270ee088.PNG)
+The Distinct On statement was used to remove duplicate rows from the results and keep the most recent title of each employee.
+The columns of emp_no, first_name, last_name and title from the retirement_titles table. The data was sorted in descending order and the data was exported to unique_titles.csv. 
+
+![1](https://user-images.githubusercontent.com/23488019/145670698-2ab7052a-28f2-48ac-b37b-1040f4bd65bc.PNG)
+
+All the duplicate rows were removed resulting into a clean dataset. 
+
+
+- 3) The query was written here to retrieve the number of employees by their most recent job title who are about to retire. 
+ 
+![1c](https://user-images.githubusercontent.com/23488019/145670563-366d9725-4fc7-4094-baf0-82ba1a822074.PNG)
+
+The number of titles were retrieved from the Unique_titles table. The count statement is used to count the number of employees of a particular title and the results are saved into the retiring_titles table. data is then exported to a csv file. The result is grouped by title and sorted in descending order.
+
+![count](https://user-images.githubusercontent.com/23488019/145670418-8f067b0d-ddb1-4df9-a98f-2ef057c7c2d9.PNG)
+
+From the result obtained it can be noted that there are 29414 Senior Engineers, 28254 Senior Staff, 14222 Enginner, 12243 Staff, 4502 Technique Leader, 1761 Assistant Engineer and just 2 Managers.
+
+- 4) The Mentorship Eligibility table holds the employees who are eligible to participate in a mentorship program. The eligibility requires the employees to be currently employed and born between January 1, 1965 and December 31, 1965. 
+
+![mentor code](https://user-images.githubusercontent.com/23488019/145670081-af9c78ad-7ca4-4108-8883-3fd841e8bbae.PNG)
+
+Inner joins were used to join the titles and dept_emp tables with the employees table using the primary key 'emp_no'. Various columns such as the emp_no, first_name, last_name, birth_date, from_date, to_date and title were retrieved from these tables. The distinct on statement was used on emp_no so that the first occurrence of the employee number for each set of rows can be retrieved. The tabular data was exported into the mentorship_eligibility.csv which can be found in the Data folder. The tabulated results can be seen below:
+
+![mentor table](https://user-images.githubusercontent.com/23488019/145670251-b6438bf1-5f45-42d1-b5fc-a848efb85450.PNG)
+
+From the table it can be noted that a lot of the current employees eligible for the mentorship are at Senior level.
 
 ## Summary:
 
@@ -65,6 +99,11 @@ departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, ti
 #### - 3)
 #### - 4)
 
-## References:-
+## References:
 
-## Useful Articles:-
+- https://www.postgresql.org/docs/9.5/sql-select.html
+- https://courses.bootcampspot.com/courses/791/pages/7-dot-2-1-create-a-database?module_item_id=301049
+
+## Useful Articles:
+
+- https://www.techonthenet.com/postgresql/joins.php
