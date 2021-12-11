@@ -103,20 +103,33 @@ From the table it can be noted that a lot of the current employees eligible for 
  
 ![sum ret](https://user-images.githubusercontent.com/23488019/145671785-54f360a7-6933-4635-a4b8-cb5fd06ea045.PNG)
 
+
 #### - 2) Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
  Unfortunately there are not enough qualified, retirement ready employees in the departments to mentor the next generation of Pewlett Hackard employees. As per the mentorship eligibility analysis, it was found that they have just 1,940 employees eligible to provide mentorship in the company.
+ 
+ 
  ![total mentors](https://user-images.githubusercontent.com/23488019/145672017-bfa10cfa-2bf8-44ea-9c38-7e6ce8fe81bd.PNG)
+ 
+ 
 It can be noted that there are 1549 employees eligible for the mentorship eligibility program. 
 
 #### - 3) Count number of eligible mentorship program employees - 
 I ran a query to count the total number of employees eligible for the Mentorship program and th eresult obtained is 1549.
+
+
 ![total mentors](https://user-images.githubusercontent.com/23488019/145672170-db78976d-3f64-44c7-b423-97ab2cdc1341.PNG)
 
 
 #### - 4) Find the number of female employees worked/working in the company
 By using the where clause female employees were sorted out of the entire database and saved in female_employees.csv
+
+
 ![female empl](https://user-images.githubusercontent.com/23488019/145673602-05ad4432-0e18-4d6d-bc7c-642eba4a9e5d.PNG)
+
+
 ![count female](https://user-images.githubusercontent.com/23488019/145673603-8baec74d-6646-400a-af04-0cc695440cd0.PNG)
+
+
 Then the number of female employees worked in the company so far are 120,051.
 
 Hence, from all our results it can be summarized that almost 1/3 rd of the employees are nearing the retirement age and the company needs to find out ways to cover up the void over the next couple years. Enough workforce may not be available in the company to be mentoring new employees at a fast rate hence provisions need to be made to make this process smooth and with least turbulence.
