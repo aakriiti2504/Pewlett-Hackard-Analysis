@@ -67,3 +67,25 @@ inner join dept_emp as de
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 order by e.emp_no;
+
+
+
+--Extra query
+select count(me.emp_no)
+from mentorship_eligibility as me;
+
+--extra query
+--Segregate female employee data
+select e.emp_no,
+       e.birth_date,
+       e.first_name,
+	   e.last_name,
+	   e.gender   
+--into female_employees
+from employees as e 
+where (e.gender = 'F')
+group by e.emp_no
+order by e.emp_no desc;
+
+select count(fe.emp_no)
+from female_employees as fe;
