@@ -1,6 +1,5 @@
 # Pewlett-Hackard-Analysis
-
-
+This analysis is conducted so that the detailed information of number of future retirees can be obtained for the Pewlett Hackard company. Various other analysis related to mentorship and eligibilities will be discussed in detail here.
 
 ## Background:
 Pewlett Hackard is a huge and a well established company having several thousand employees. As baby boomers begin to retire at a rapid rate, the company is looking towards the future in two ways:
@@ -34,11 +33,38 @@ An entity relationship diagram (ERD) is a type of flowchart that highlights diff
 The ERD also shows the flow of information from one table to another. There are three types of ERDs: conceptual, logical, and physical. Each one builds upon the other—you need the conceptual ERD to build a logical ERD to build a physical ERD.
 - 3. Quick DBD - Using an online tool called Quick Database Diagrams ("Quick DBD" for short), we'll help Bobby start by familiarizing ourselves with the webpage, then create a conceptual ERD.  Our flow chart will help us navigate through the relationships more easily than if we had all six CSV files open side-by-side. Quick DBD is a great resource—it's intuitive and creates clean and comprehensible ERDs that are easily exported as image files. http://quickdatabasediagrams.com/
 
+#### Data Sources-
+departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv provided by the company.
+
 ## Procedure:
 - Downloaded the 6 .csv files and analyzed the data by checking the number of columns and data.
 - Created an ERD using the online tool  to get an idea of the primary keys and the foreign keys in the 6 databases.
-- Created tables in pgAdmin for each .csv
-- 
- 
+![EmployeeDB](https://user-images.githubusercontent.com/23488019/145668542-2cd74e6d-6442-489f-8431-2ab81e50db58.png)
 
 
+- The schema was made by creating tables in pgAdmin for each .csv. 
+- Write queries as per the deliverables and export data as .csv files.
+
+
+## Results: 
+
+-1)
+-2)
+-3)
+-4)
+
+## Summary:
+
+#### - 1) How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+
+
+
+#### - 2) Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+
+#### - 3)
+#### - 4)
+
+## References:-
+
+## Useful Articles:-
