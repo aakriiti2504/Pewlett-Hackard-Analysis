@@ -84,7 +84,7 @@ The number of titles were retrieved from the Unique_titles table. The count stat
 
 ![count](https://user-images.githubusercontent.com/23488019/145670418-8f067b0d-ddb1-4df9-a98f-2ef057c7c2d9.PNG)
 
-From the result obtained it can be noted that there are 29414 Senior Engineers, 28254 Senior Staff, 14222 Enginner, 12243 Staff, 4502 Technique Leader, 1761 Assistant Engineer and just 2 Managers.
+From the result obtained it can be noted that there are 29414 Senior Engineers, 28254 Senior Staff, 14222 Enginner, 12243 Staff, 4502 Technique Leader, 1761 Assistant Engineer and just 2 Managers. In all, there are 90,398 that are about to retire.
 
 - 4. The Mentorship Eligibility table holds the employees who are eligible to participate in a mentorship program. The eligibility requires the employees to be currently employed and born between January 1, 1965 and December 31, 1965. 
 
@@ -99,14 +99,27 @@ From the table it can be noted that a lot of the current employees eligible for 
 ## Summary:
 
 #### - 1) How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-
-
+ As the "Silver Tsunami" begins to make an impact, a total of 90,398 positions will need to be filled since that is the total number of employees that are going to be retiring in near future. The company has a big task of filiing in these vacancies.
+ 
+![sum ret](https://user-images.githubusercontent.com/23488019/145671785-54f360a7-6933-4635-a4b8-cb5fd06ea045.PNG)
 
 #### - 2) Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+ Unfortunately there are not enough qualified, retirement ready employees in the departments to mentor the next generation of Pewlett Hackard employees. As per the mentorship eligibility analysis, it was found that they have just 1,940 employees eligible to provide mentorship in the company.
+ ![total mentors](https://user-images.githubusercontent.com/23488019/145672017-bfa10cfa-2bf8-44ea-9c38-7e6ce8fe81bd.PNG)
+It can be noted that there are 1549 employees eligible for the mentorship eligibility program. 
+
+#### - 3) Count number of eligible mentorship program employees - 
+I ran a query to count the total number of employees eligible for the Mentorship program and th eresult obtained is 1549.
+![total mentors](https://user-images.githubusercontent.com/23488019/145672170-db78976d-3f64-44c7-b423-97ab2cdc1341.PNG)
 
 
-#### - 3)
-#### - 4)
+#### - 4) Find the number of female employees worked/working in the company
+By using the where clause female employees were sorted out of the entire database and saved in female_employees.csv
+![female empl](https://user-images.githubusercontent.com/23488019/145673602-05ad4432-0e18-4d6d-bc7c-642eba4a9e5d.PNG)
+![count female](https://user-images.githubusercontent.com/23488019/145673603-8baec74d-6646-400a-af04-0cc695440cd0.PNG)
+Then the number of female employees worked in the company so far are 120,051.
+
+Hence, from all our results it can be summarized that almost 1/3 rd of the employees are nearing the retirement age and the company needs to find out ways to cover up the void over the next couple years. Enough workforce may not be available in the company to be mentoring new employees at a fast rate hence provisions need to be made to make this process smooth and with least turbulence.
 
 ## References:
 
@@ -116,3 +129,4 @@ From the table it can be noted that a lot of the current employees eligible for 
 ## Useful Articles:
 
 - https://www.techonthenet.com/postgresql/joins.php
+- https://www.familysearch.org/en/blog/millennial-generation
